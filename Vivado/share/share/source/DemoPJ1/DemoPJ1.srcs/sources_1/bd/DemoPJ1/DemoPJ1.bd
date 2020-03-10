@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:synthFlowMode="None" bd:tool_version="2015.3" bd:top="DemoPJ1" bd:version="1.00.a">
+
+  <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>BlockDiagram</spirit:library>
+    <spirit:name>DemoPJ1</spirit:name>
+    <spirit:version>1.00.a</spirit:version>
+    <spirit:parameters>
+      <spirit:parameter>
+        <spirit:name>isTop</spirit:name>
+        <spirit:value spirit:format="bool" spirit:resolve="immediate">true</spirit:value>
+      </spirit:parameter>
+    </spirit:parameters>
+    <spirit:model>
+      <spirit:views>
+        <spirit:view>
+          <spirit:name>BlockDiagram</spirit:name>
+          <spirit:envIdentifier>:vivado.xilinx.com:</spirit:envIdentifier>
+          <spirit:hierarchyRef spirit:library="BlockDiagram" spirit:name="DemoPJ1_imp" spirit:vendor="xilinx.com" spirit:version="1.00.a"/>
+        </spirit:view>
+      </spirit:views>
+      <spirit:ports>
+        <spirit:port>
+          <spirit:name>clk_in</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>Q7</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>Q6</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>Q5</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>Q4</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>Q3</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>Q2</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>Q1</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>Q0</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>Q7_1</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>Q6_1</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>Q5_1</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>Q4_1</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>Q3_1</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>Q2_1</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>Q1_1</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>MR_n</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>Q0_1</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+      </spirit:ports>
+    </spirit:model>
+  </spirit:component>
+
+  <spirit:design xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>BlockDiagram</spirit:library>
+    <spirit:name>DemoPJ1_imp</spirit:name>
+    <spirit:version>1.00.a</spirit:version>
+    <spirit:componentInstances>
+      <spirit:componentInstance>
+        <spirit:instanceName>shift_register_8bit_1</spirit:instanceName>
+        <spirit:componentRef spirit:library="xup" spirit:name="shift_register_8bit" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">DemoPJ1_shift_register_8bit_1_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>clk_div_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="xup" spirit:name="clk_div" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">DemoPJ1_clk_div_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="N">99999999</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>shift_register_8bit_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="xup" spirit:name="shift_register_8bit" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">DemoPJ1_shift_register_8bit_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>xup_inv_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="xup" spirit:name="xup_inv" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">DemoPJ1_xup_inv_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+    </spirit:componentInstances>
+    <spirit:adHocConnections>
+      <spirit:adHocConnection>
+        <spirit:name>xup_nand2_0_y</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="xup_inv_0" spirit:portRef="y"/>
+        <spirit:internalPortReference spirit:componentRef="shift_register_8bit_1" spirit:portRef="DSA"/>
+        <spirit:internalPortReference spirit:componentRef="shift_register_8bit_1" spirit:portRef="DSB"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>clk_div_0_clk_out</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="clk_div_0" spirit:portRef="clk_out"/>
+        <spirit:internalPortReference spirit:componentRef="shift_register_8bit_1" spirit:portRef="CP"/>
+        <spirit:internalPortReference spirit:componentRef="shift_register_8bit_0" spirit:portRef="CP"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>shift_register_8bit_1_Q7</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="shift_register_8bit_1" spirit:portRef="Q7"/>
+        <spirit:internalPortReference spirit:componentRef="shift_register_8bit_0" spirit:portRef="DSA"/>
+        <spirit:internalPortReference spirit:componentRef="shift_register_8bit_0" spirit:portRef="DSB"/>
+        <spirit:externalPortReference spirit:portRef="Q7_1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>shift_register_8bit_1_Q0</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="shift_register_8bit_1" spirit:portRef="Q0"/>
+        <spirit:externalPortReference spirit:portRef="Q0_1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>shift_register_8bit_0_Q7</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="shift_register_8bit_0" spirit:portRef="Q7"/>
+        <spirit:externalPortReference spirit:portRef="Q7"/>
+        <spirit:internalPortReference spirit:componentRef="xup_inv_0" spirit:portRef="a"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>clk_in_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="clk_in"/>
+        <spirit:internalPortReference spirit:componentRef="clk_div_0" spirit:portRef="clk_in"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>shift_register_8bit_0_Q6</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="shift_register_8bit_0" spirit:portRef="Q6"/>
+        <spirit:externalPortReference spirit:portRef="Q6"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>shift_register_8bit_0_Q5</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="shift_register_8bit_0" spirit:portRef="Q5"/>
+        <spirit:externalPortReference spirit:portRef="Q5"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>shift_register_8bit_0_Q4</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="shift_register_8bit_0" spirit:portRef="Q4"/>
+        <spirit:externalPortReference spirit:portRef="Q4"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>shift_register_8bit_0_Q3</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="shift_register_8bit_0" spirit:portRef="Q3"/>
+        <spirit:externalPortReference spirit:portRef="Q3"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>shift_register_8bit_0_Q2</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="shift_register_8bit_0" spirit:portRef="Q2"/>
+        <spirit:externalPortReference spirit:portRef="Q2"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>shift_register_8bit_0_Q1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="shift_register_8bit_0" spirit:portRef="Q1"/>
+        <spirit:externalPortReference spirit:portRef="Q1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>shift_register_8bit_0_Q0</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="shift_register_8bit_0" spirit:portRef="Q0"/>
+        <spirit:externalPortReference spirit:portRef="Q0"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>shift_register_8bit_1_Q6</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="shift_register_8bit_1" spirit:portRef="Q6"/>
+        <spirit:externalPortReference spirit:portRef="Q6_1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>shift_register_8bit_1_Q5</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="shift_register_8bit_1" spirit:portRef="Q5"/>
+        <spirit:externalPortReference spirit:portRef="Q5_1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>shift_register_8bit_1_Q4</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="shift_register_8bit_1" spirit:portRef="Q4"/>
+        <spirit:externalPortReference spirit:portRef="Q4_1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>shift_register_8bit_1_Q3</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="shift_register_8bit_1" spirit:portRef="Q3"/>
+        <spirit:externalPortReference spirit:portRef="Q3_1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>shift_register_8bit_1_Q2</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="shift_register_8bit_1" spirit:portRef="Q2"/>
+        <spirit:externalPortReference spirit:portRef="Q2_1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>shift_register_8bit_1_Q1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="shift_register_8bit_1" spirit:portRef="Q1"/>
+        <spirit:externalPortReference spirit:portRef="Q1_1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>MR_n_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="MR_n"/>
+        <spirit:internalPortReference spirit:componentRef="shift_register_8bit_1" spirit:portRef="MR_n"/>
+        <spirit:internalPortReference spirit:componentRef="shift_register_8bit_0" spirit:portRef="MR_n"/>
+      </spirit:adHocConnection>
+    </spirit:adHocConnections>
+  </spirit:design>
+
+</bd:repository>

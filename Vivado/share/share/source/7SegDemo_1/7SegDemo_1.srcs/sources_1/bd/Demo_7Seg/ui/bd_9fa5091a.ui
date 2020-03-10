@@ -1,0 +1,38 @@
+{
+   guistr: "# # String gsaved with Nlview 6.5.5  2015-06-26 bk=1.3371 VDI=38 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port GND -pg 1 -y 150 -defaultsOSRD
+preplace port DP -pg 1 -y 50 -defaultsOSRD
+preplace port clk_in -pg 1 -y 100 -defaultsOSRD
+preplace port a -pg 1 -y 40 -defaultsOSRD
+preplace port b -pg 1 -y 60 -defaultsOSRD
+preplace port AN0 -pg 1 -y 250 -defaultsOSRD
+preplace port c -pg 1 -y 80 -defaultsOSRD
+preplace port BI_RBO -pg 1 -y 180 -defaultsOSRD
+preplace port d -pg 1 -y 100 -defaultsOSRD
+preplace port e -pg 1 -y 120 -defaultsOSRD
+preplace port f -pg 1 -y 140 -defaultsOSRD
+preplace port g -pg 1 -y 160 -defaultsOSRD
+preplace inst decimal_counter_0 -pg 1 -lvl 2 -y 150 -defaultsOSRD
+preplace inst BCD2SEG7_0 -pg 1 -lvl 3 -y 110 -defaultsOSRD
+preplace inst clk_div_0 -pg 1 -lvl 1 -y 100 -defaultsOSRD
+preplace netloc decimal_counter_0_Qa 1 1 2 180 40 360
+preplace netloc decimal_counter_0_Qb 1 2 1 N
+preplace netloc decimal_counter_0_Qc 1 2 1 380
+preplace netloc BCD2SEG7_0_a 1 3 1 NJ
+preplace netloc GND_1 1 0 4 NJ 150 180 250 NJ 250 NJ
+preplace netloc decimal_counter_0_Qd 1 2 1 370
+preplace netloc BCD2SEG7_0_b 1 3 1 NJ
+preplace netloc DP_1 1 0 3 NJ 50 NJ 50 350
+preplace netloc BCD2SEG7_0_c 1 3 1 NJ
+preplace netloc clk_in_1 1 0 1 NJ
+preplace netloc BCD2SEG7_0_d 1 3 1 NJ
+preplace netloc clk_div_0_clk_out 1 1 1 N
+preplace netloc BCD2SEG7_0_e 1 3 1 NJ
+preplace netloc BCD2SEG7_0_f 1 3 1 NJ
+preplace netloc Net 1 3 1 NJ
+preplace netloc BCD2SEG7_0_g 1 3 1 NJ
+levelinfo -pg 1 0 100 270 460 560 -top 0 -bot 270
+",
+}
+0

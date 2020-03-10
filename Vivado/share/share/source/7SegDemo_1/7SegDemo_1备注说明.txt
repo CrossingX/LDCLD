@@ -1,0 +1,2 @@
+7SegDemo_1完成实验三演示工程 十进制计数器在1位7段数码管的显示，1Hz切换，已在Basys3实验板上验证。注意IP核需解压缩并添加到工程
+运行时Basys3板SW0=LOW,SW1=HIGH,SW2=HIGH

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
+# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+# Start of session at: Fri Oct 06 17:13:40 2017
+# Process ID: 127336
+# Current directory: E:/xilinx/Vivado/7SegDemo_1/7SegDemo_1.runs/synth_1
+# Command line: vivado.exe -log Demo_7Seg_wrapper.vds -mode batch -messageDb vivado.pb -notrace -source Demo_7Seg_wrapper.tcl
+# Log file: E:/xilinx/Vivado/7SegDemo_1/7SegDemo_1.runs/synth_1/Demo_7Seg_wrapper.vds
+# Journal file: E:/xilinx/Vivado/7SegDemo_1/7SegDemo_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Demo_7Seg_wrapper.tcl -notrace

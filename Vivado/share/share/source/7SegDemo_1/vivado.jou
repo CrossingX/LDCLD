@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
+# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+# Start of session at: Tue Feb 12 16:21:51 2019
+# Process ID: 8284
+# Current directory: D:/share/source/7SegDemo_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8248 D:\share\source\7SegDemo_1\7SegDemo_1.xpr
+# Log file: D:/share/source/7SegDemo_1/vivado.log
+# Journal file: D:/share/source/7SegDemo_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/share/source/7SegDemo_1/7SegDemo_1.xpr
+open_hw
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/share/source/7SegDemo_1/7SegDemo_1.runs/impl_1/Demo_7Seg_wrapper.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/share/source/7SegDemo_1/7SegDemo_1.runs/impl_1/Demo_7Seg_wrapper.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]

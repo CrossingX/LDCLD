@@ -1,0 +1,57 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.3 (win64) Build 1368829 Mon Sep 28 20:06:43 MDT 2015
+| Date         : Wed Feb 13 14:10:39 2019
+| Host         : WINDOWS-7T6BJOB running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file DemoPJ1_wrapper_control_sets_placed.rpt
+| Design       : DemoPJ1_wrapper
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |     4 |
+| Minimum Number of register sites lost to control set restrictions |     7 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               1 |            1 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              32 |            8 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              16 |            6 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------+---------------+-----------------------------------------------------+------------------+----------------+
+|            Clock Signal           | Enable Signal |                   Set/Reset Signal                  | Slice Load Count | Bel Load Count |
++-----------------------------------+---------------+-----------------------------------------------------+------------------+----------------+
+|  clk_in_IBUF_BUFG                 |               |                                                     |                1 |              1 |
+|  DemoPJ1_i/clk_div_0/inst/clk_out | MR_n_IBUF     | DemoPJ1_i/shift_register_8bit_1/inst/Q_r[7]_i_1_n_0 |                3 |              8 |
+|  DemoPJ1_i/clk_div_0/inst/clk_out | MR_n_IBUF     | DemoPJ1_i/shift_register_8bit_0/inst/Q_r[7]_i_1_n_0 |                3 |              8 |
+|  clk_in_IBUF_BUFG                 |               | DemoPJ1_i/clk_div_0/inst/clear                      |                8 |             32 |
++-----------------------------------+---------------+-----------------------------------------------------+------------------+----------------+
+
+

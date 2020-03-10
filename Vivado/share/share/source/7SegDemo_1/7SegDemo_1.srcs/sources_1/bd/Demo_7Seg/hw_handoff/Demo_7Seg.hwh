@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Oct 17 10:47:42 2017" VIVADOVERSION="2015.3">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a35t" NAME="Demo_7Seg" PACKAGE="cpg236" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="clk_in" SIGIS="undef" SIGNAME="External_Ports_clk_in">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="clk_div_0" PORT="clk_in"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="DP" SIGIS="undef" SIGNAME="External_Ports_DP">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BCD2SEG7_0" PORT="LT_n"/>
+        <CONNECTION INSTANCE="BCD2SEG7_0" PORT="RBI_n"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="GND" SIGIS="undef" SIGNAME="External_Ports_GND">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="External_Ports" PORT="AN0"/>
+        <CONNECTION INSTANCE="decimal_counter_0" PORT="R9_1"/>
+        <CONNECTION INSTANCE="decimal_counter_0" PORT="R9_2"/>
+        <CONNECTION INSTANCE="decimal_counter_0" PORT="R0_1"/>
+        <CONNECTION INSTANCE="decimal_counter_0" PORT="R0_2"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AN0" SIGIS="undef" SIGNAME="External_Ports_GND">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="External_Ports" PORT="GND"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="a" SIGIS="undef" SIGNAME="BCD2SEG7_0_a">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BCD2SEG7_0" PORT="a"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="b" SIGIS="undef" SIGNAME="BCD2SEG7_0_b">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BCD2SEG7_0" PORT="b"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="c" SIGIS="undef" SIGNAME="BCD2SEG7_0_c">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BCD2SEG7_0" PORT="c"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="d" SIGIS="undef" SIGNAME="BCD2SEG7_0_d">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BCD2SEG7_0" PORT="d"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="e" SIGIS="undef" SIGNAME="BCD2SEG7_0_e">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BCD2SEG7_0" PORT="e"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="f" SIGIS="undef" SIGNAME="BCD2SEG7_0_f">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BCD2SEG7_0" PORT="f"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="g" SIGIS="undef" SIGNAME="BCD2SEG7_0_g">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BCD2SEG7_0" PORT="g"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="IO" NAME="BI_RBO" SIGIS="undef" SIGNAME="External_Ports_BI_RBO">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BCD2SEG7_0" PORT="BI_RBO_n"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE FULLNAME="/BCD2SEG7_0" HWVERSION="1.0" INSTANCE="BCD2SEG7_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="BCD2SEG7" VLNV="xilinx.com:xup:BCD2SEG7:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Demo_7Seg_BCD2SEG7_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="LT_n" SIGIS="undef" SIGNAME="External_Ports_DP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="DP"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="RBI_n" SIGIS="undef" SIGNAME="External_Ports_DP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="DP"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="BCD_D" SIGIS="undef" SIGNAME="decimal_counter_0_Qd">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decimal_counter_0" PORT="Qd"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="BCD_C" SIGIS="undef" SIGNAME="decimal_counter_0_Qc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decimal_counter_0" PORT="Qc"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="BCD_B" SIGIS="undef" SIGNAME="decimal_counter_0_Qb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decimal_counter_0" PORT="Qb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="BCD_A" SIGIS="undef" SIGNAME="decimal_counter_0_Qa">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decimal_counter_0" PORT="Qa"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="a" SIGIS="undef" SIGNAME="BCD2SEG7_0_a">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="b" SIGIS="undef" SIGNAME="BCD2SEG7_0_b">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="b"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="c" SIGIS="undef" SIGNAME="BCD2SEG7_0_c">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="c"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="d" SIGIS="undef" SIGNAME="BCD2SEG7_0_d">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="d"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="e" SIGIS="undef" SIGNAME="BCD2SEG7_0_e">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="e"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="f" SIGIS="undef" SIGNAME="BCD2SEG7_0_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="f"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="g" SIGIS="undef" SIGNAME="BCD2SEG7_0_g">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="g"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="IO" NAME="BI_RBO_n" SIGIS="undef" SIGNAME="External_Ports_BI_RBO">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="BI_RBO"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/clk_div_0" HWVERSION="1.0" INSTANCE="clk_div_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clk_div" VLNV="xilinx.com:xup:clk_div:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="N" VALUE="99999999"/>
+        <PARAMETER NAME="Component_Name" VALUE="Demo_7Seg_clk_div_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk_in" SIGIS="undef" SIGNAME="External_Ports_clk_in">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="clk_out" SIGIS="undef" SIGNAME="clk_div_0_clk_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decimal_counter_0" PORT="CP1_n"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/decimal_counter_0" HWVERSION="1.0" INSTANCE="decimal_counter_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="decimal_counter" VLNV="xilinx.com:xup:decimal_counter:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Demo_7Seg_decimal_counter_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="CP1_n" SIGIS="undef" SIGNAME="clk_div_0_clk_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_div_0" PORT="clk_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="CP2_n" SIGIS="undef" SIGNAME="decimal_counter_0_Qa">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decimal_counter_0" PORT="Qa"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="R0_1" SIGIS="undef" SIGNAME="External_Ports_GND">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="GND"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="R0_2" SIGIS="undef" SIGNAME="External_Ports_GND">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="GND"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="R9_1" SIGIS="undef" SIGNAME="External_Ports_GND">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="GND"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="R9_2" SIGIS="undef" SIGNAME="External_Ports_GND">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="GND"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Qa" SIGIS="undef" SIGNAME="decimal_counter_0_Qa">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BCD2SEG7_0" PORT="BCD_A"/>
+            <CONNECTION INSTANCE="decimal_counter_0" PORT="CP2_n"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Qb" SIGIS="undef" SIGNAME="decimal_counter_0_Qb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BCD2SEG7_0" PORT="BCD_B"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Qc" SIGIS="undef" SIGNAME="decimal_counter_0_Qc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BCD2SEG7_0" PORT="BCD_C"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Qd" SIGIS="undef" SIGNAME="decimal_counter_0_Qd">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BCD2SEG7_0" PORT="BCD_D"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
+# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+# Start of session at: Tue Feb 12 15:38:45 2019
+# Process ID: 1584
+# Current directory: D:/vivado/vivado project/7SegDemo_1/7SegDemo_1.runs/impl_1
+# Command line: vivado.exe -log Demo_7Seg_wrapper.vdi -applog -messageDb vivado.pb -mode batch -source Demo_7Seg_wrapper.tcl -notrace
+# Log file: D:/vivado/vivado project/7SegDemo_1/7SegDemo_1.runs/impl_1/Demo_7Seg_wrapper.vdi
+# Journal file: D:/vivado/vivado project/7SegDemo_1/7SegDemo_1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Demo_7Seg_wrapper.tcl -notrace

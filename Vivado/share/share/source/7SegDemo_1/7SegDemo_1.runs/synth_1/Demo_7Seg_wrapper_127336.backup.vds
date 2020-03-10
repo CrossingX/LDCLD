@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
+# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+# Start of session at: Fri Oct 06 17:13:40 2017
+# Process ID: 127336
+# Current directory: E:/xilinx/Vivado/7SegDemo_1/7SegDemo_1.runs/synth_1
+# Command line: vivado.exe -log Demo_7Seg_wrapper.vds -mode batch -messageDb vivado.pb -notrace -source Demo_7Seg_wrapper.tcl
+# Log file: E:/xilinx/Vivado/7SegDemo_1/7SegDemo_1.runs/synth_1/Demo_7Seg_wrapper.vds
+# Journal file: E:/xilinx/Vivado/7SegDemo_1/7SegDemo_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Demo_7Seg_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/xilinx/source_lib/74IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/xilinx/source_lib/XUP_LIB'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/xilinx/Vivado/2015.3/data/ip'.
+add_files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 223.988 ; gain = 19.945
+Command: synth_design -top Demo_7Seg_wrapper -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+WARNING: [Common 17-348] Failed to get the license for feature 'Synthesis' and/or device 'xc7a35t'
+4 Infos, 1 Warnings, 0 Critical Warnings and 1 Errors encountered.
+synth_design failed
+ERROR: [Common 17-345] A valid license was not found for feature 'Synthesis' and/or device 'xc7a35t'. Please run the Vivado License Manager for assistance in determining
+which features and devices are licensed for your system.
+Resolution: Check the status of your licenses in the Vivado License Manager. For debug help search Xilinx Support for "Licensing FAQ". 
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 06 17:14:25 2017...

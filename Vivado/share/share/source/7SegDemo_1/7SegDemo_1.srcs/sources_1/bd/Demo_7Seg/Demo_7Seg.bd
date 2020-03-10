@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:isValidated="true" bd:synthFlowMode="None" bd:tool_version="2015.3" bd:top="Demo_7Seg" bd:version="1.00.a">
+
+  <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>BlockDiagram</spirit:library>
+    <spirit:name>Demo_7Seg</spirit:name>
+    <spirit:version>1.00.a</spirit:version>
+    <spirit:parameters>
+      <spirit:parameter>
+        <spirit:name>isTop</spirit:name>
+        <spirit:value spirit:format="bool" spirit:resolve="immediate">true</spirit:value>
+      </spirit:parameter>
+    </spirit:parameters>
+    <spirit:model>
+      <spirit:views>
+        <spirit:view>
+          <spirit:name>BlockDiagram</spirit:name>
+          <spirit:envIdentifier>:vivado.xilinx.com:</spirit:envIdentifier>
+          <spirit:hierarchyRef spirit:library="BlockDiagram" spirit:name="Demo_7Seg_imp" spirit:vendor="xilinx.com" spirit:version="1.00.a"/>
+        </spirit:view>
+      </spirit:views>
+      <spirit:ports>
+        <spirit:port>
+          <spirit:name>clk_in</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>DP</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>GND</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>AN0</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>a</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>b</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>c</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>d</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>e</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>f</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>g</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>BI_RBO</spirit:name>
+          <spirit:wire>
+            <spirit:direction>inout</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+      </spirit:ports>
+    </spirit:model>
+  </spirit:component>
+
+  <spirit:design xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>BlockDiagram</spirit:library>
+    <spirit:name>Demo_7Seg_imp</spirit:name>
+    <spirit:version>1.00.a</spirit:version>
+    <spirit:componentInstances>
+      <spirit:componentInstance>
+        <spirit:instanceName>BCD2SEG7_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="xup" spirit:name="BCD2SEG7" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">Demo_7Seg_BCD2SEG7_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>decimal_counter_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="xup" spirit:name="decimal_counter" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">Demo_7Seg_decimal_counter_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>clk_div_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="xup" spirit:name="clk_div" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">Demo_7Seg_clk_div_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="N">99999999</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+    </spirit:componentInstances>
+    <spirit:adHocConnections>
+      <spirit:adHocConnection>
+        <spirit:name>clk_in_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="clk_in"/>
+        <spirit:internalPortReference spirit:componentRef="clk_div_0" spirit:portRef="clk_in"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>DP_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="DP"/>
+        <spirit:internalPortReference spirit:componentRef="BCD2SEG7_0" spirit:portRef="LT_n"/>
+        <spirit:internalPortReference spirit:componentRef="BCD2SEG7_0" spirit:portRef="RBI_n"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>GND_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="GND"/>
+        <spirit:externalPortReference spirit:portRef="AN0"/>
+        <spirit:internalPortReference spirit:componentRef="decimal_counter_0" spirit:portRef="R9_1"/>
+        <spirit:internalPortReference spirit:componentRef="decimal_counter_0" spirit:portRef="R9_2"/>
+        <spirit:internalPortReference spirit:componentRef="decimal_counter_0" spirit:portRef="R0_1"/>
+        <spirit:internalPortReference spirit:componentRef="decimal_counter_0" spirit:portRef="R0_2"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>BCD2SEG7_0_a</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="BCD2SEG7_0" spirit:portRef="a"/>
+        <spirit:externalPortReference spirit:portRef="a"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>BCD2SEG7_0_b</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="BCD2SEG7_0" spirit:portRef="b"/>
+        <spirit:externalPortReference spirit:portRef="b"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>BCD2SEG7_0_c</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="BCD2SEG7_0" spirit:portRef="c"/>
+        <spirit:externalPortReference spirit:portRef="c"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>BCD2SEG7_0_d</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="BCD2SEG7_0" spirit:portRef="d"/>
+        <spirit:externalPortReference spirit:portRef="d"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>BCD2SEG7_0_e</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="BCD2SEG7_0" spirit:portRef="e"/>
+        <spirit:externalPortReference spirit:portRef="e"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>BCD2SEG7_0_f</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="BCD2SEG7_0" spirit:portRef="f"/>
+        <spirit:externalPortReference spirit:portRef="f"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>BCD2SEG7_0_g</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="BCD2SEG7_0" spirit:portRef="g"/>
+        <spirit:externalPortReference spirit:portRef="g"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>Net</spirit:name>
+        <spirit:externalPortReference spirit:portRef="BI_RBO"/>
+        <spirit:internalPortReference spirit:componentRef="BCD2SEG7_0" spirit:portRef="BI_RBO_n"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>decimal_counter_0_Qa</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="decimal_counter_0" spirit:portRef="Qa"/>
+        <spirit:internalPortReference spirit:componentRef="BCD2SEG7_0" spirit:portRef="BCD_A"/>
+        <spirit:internalPortReference spirit:componentRef="decimal_counter_0" spirit:portRef="CP2_n"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>decimal_counter_0_Qb</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="decimal_counter_0" spirit:portRef="Qb"/>
+        <spirit:internalPortReference spirit:componentRef="BCD2SEG7_0" spirit:portRef="BCD_B"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>decimal_counter_0_Qc</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="decimal_counter_0" spirit:portRef="Qc"/>
+        <spirit:internalPortReference spirit:componentRef="BCD2SEG7_0" spirit:portRef="BCD_C"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>decimal_counter_0_Qd</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="decimal_counter_0" spirit:portRef="Qd"/>
+        <spirit:internalPortReference spirit:componentRef="BCD2SEG7_0" spirit:portRef="BCD_D"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>clk_div_0_clk_out</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="clk_div_0" spirit:portRef="clk_out"/>
+        <spirit:internalPortReference spirit:componentRef="decimal_counter_0" spirit:portRef="CP1_n"/>
+      </spirit:adHocConnection>
+    </spirit:adHocConnections>
+  </spirit:design>
+
+</bd:repository>

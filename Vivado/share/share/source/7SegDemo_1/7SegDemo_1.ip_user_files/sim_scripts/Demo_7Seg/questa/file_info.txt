@@ -1,0 +1,8 @@
+Language File-Name                        IP         Library         File-Path                                                                                                                
+Verilog, BCD2SEG7.v,                      Demo_7Seg, xil_defaultlib, ./../../../../7SegDemo_1.srcs/sources_1/bd/Demo_7Seg/ipshared/xilinx.com/bcd2seg7_v1_0/BCD2SEG7.v                        
+Verilog, Demo_7Seg_BCD2SEG7_0_0.v,        Demo_7Seg, xil_defaultlib, ./../../../../7SegDemo_1.srcs/sources_1/bd/Demo_7Seg/ip/Demo_7Seg_BCD2SEG7_0_0/sim/Demo_7Seg_BCD2SEG7_0_0.v              
+Verilog, decimal_counter.v,               Demo_7Seg, xil_defaultlib, ./../../../../7SegDemo_1.srcs/sources_1/bd/Demo_7Seg/ipshared/xilinx.com/decimal_counter_v1_0/decimal_counter.v          
+Verilog, Demo_7Seg_decimal_counter_0_0.v, Demo_7Seg, xil_defaultlib, ./../../../../7SegDemo_1.srcs/sources_1/bd/Demo_7Seg/ip/Demo_7Seg_decimal_counter_0_0/sim/Demo_7Seg_decimal_counter_0_0.v
+Verilog, clk_div.v,                       Demo_7Seg, xil_defaultlib, ./../../../../7SegDemo_1.srcs/sources_1/bd/Demo_7Seg/ipshared/xilinx.com/clk_div_v1_0/clk_div.v                          
+Verilog, Demo_7Seg_clk_div_0_0.v,         Demo_7Seg, xil_defaultlib, ./../../../../7SegDemo_1.srcs/sources_1/bd/Demo_7Seg/ip/Demo_7Seg_clk_div_0_0/sim/Demo_7Seg_clk_div_0_0.v                
+Verilog, Demo_7Seg.v,                     Demo_7Seg, xil_defaultlib, ./../../../../7SegDemo_1.srcs/sources_1/bd/Demo_7Seg/hdl/Demo_7Seg.v                                                     

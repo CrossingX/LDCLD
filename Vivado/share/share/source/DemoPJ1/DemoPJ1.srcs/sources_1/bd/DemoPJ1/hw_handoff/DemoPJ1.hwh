@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Feb 13 14:09:30 2019" VIVADOVERSION="2015.3">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a35t" NAME="DemoPJ1" PACKAGE="cpg236" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="clk_in" SIGIS="undef" SIGNAME="External_Ports_clk_in">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="clk_div_0" PORT="clk_in"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="Q7" SIGIS="undef" SIGNAME="shift_register_8bit_0_Q7">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="shift_register_8bit_0" PORT="Q7"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="Q6" SIGIS="undef" SIGNAME="shift_register_8bit_0_Q6">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="shift_register_8bit_0" PORT="Q6"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="Q5" SIGIS="undef" SIGNAME="shift_register_8bit_0_Q5">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="shift_register_8bit_0" PORT="Q5"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="Q4" SIGIS="undef" SIGNAME="shift_register_8bit_0_Q4">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="shift_register_8bit_0" PORT="Q4"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="Q3" SIGIS="undef" SIGNAME="shift_register_8bit_0_Q3">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="shift_register_8bit_0" PORT="Q3"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="Q2" SIGIS="undef" SIGNAME="shift_register_8bit_0_Q2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="shift_register_8bit_0" PORT="Q2"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="Q1" SIGIS="undef" SIGNAME="shift_register_8bit_0_Q1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="shift_register_8bit_0" PORT="Q1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="Q0" SIGIS="undef" SIGNAME="shift_register_8bit_0_Q0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="shift_register_8bit_0" PORT="Q0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="Q7_1" SIGIS="undef" SIGNAME="shift_register_8bit_1_Q7">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="shift_register_8bit_1" PORT="Q7"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="Q6_1" SIGIS="undef" SIGNAME="shift_register_8bit_1_Q6">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="shift_register_8bit_1" PORT="Q6"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="Q5_1" SIGIS="undef" SIGNAME="shift_register_8bit_1_Q5">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="shift_register_8bit_1" PORT="Q5"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="Q4_1" SIGIS="undef" SIGNAME="shift_register_8bit_1_Q4">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="shift_register_8bit_1" PORT="Q4"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="Q3_1" SIGIS="undef" SIGNAME="shift_register_8bit_1_Q3">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="shift_register_8bit_1" PORT="Q3"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="Q2_1" SIGIS="undef" SIGNAME="shift_register_8bit_1_Q2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="shift_register_8bit_1" PORT="Q2"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="Q1_1" SIGIS="undef" SIGNAME="shift_register_8bit_1_Q1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="shift_register_8bit_1" PORT="Q1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="MR_n" SIGIS="undef" SIGNAME="External_Ports_MR_n">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="shift_register_8bit_1" PORT="MR_n"/>
+        <CONNECTION INSTANCE="shift_register_8bit_0" PORT="MR_n"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="Q0_1" SIGIS="undef" SIGNAME="shift_register_8bit_1_Q0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="shift_register_8bit_1" PORT="Q0"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE FULLNAME="/clk_div_0" HWVERSION="1.0" INSTANCE="clk_div_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clk_div" VLNV="xilinx.com:xup:clk_div:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="N" VALUE="99999999"/>
+        <PARAMETER NAME="Component_Name" VALUE="DemoPJ1_clk_div_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk_in" SIGIS="undef" SIGNAME="External_Ports_clk_in">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="clk_out" SIGIS="undef" SIGNAME="clk_div_0_clk_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="shift_register_8bit_1" PORT="CP"/>
+            <CONNECTION INSTANCE="shift_register_8bit_0" PORT="CP"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/shift_register_8bit_0" HWVERSION="1.0" INSTANCE="shift_register_8bit_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="shift_register_8bit" VLNV="xilinx.com:xup:shift_register_8bit:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="DemoPJ1_shift_register_8bit_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="DSA" SIGIS="undef" SIGNAME="shift_register_8bit_1_Q7">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="shift_register_8bit_1" PORT="Q7"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="DSB" SIGIS="undef" SIGNAME="shift_register_8bit_1_Q7">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="shift_register_8bit_1" PORT="Q7"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="CP" SIGIS="undef" SIGNAME="clk_div_0_clk_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_div_0" PORT="clk_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="MR_n" SIGIS="undef" SIGNAME="External_Ports_MR_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="MR_n"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Q7" SIGIS="undef" SIGNAME="shift_register_8bit_0_Q7">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Q7"/>
+            <CONNECTION INSTANCE="xup_inv_0" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Q6" SIGIS="undef" SIGNAME="shift_register_8bit_0_Q6">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Q6"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Q5" SIGIS="undef" SIGNAME="shift_register_8bit_0_Q5">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Q5"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Q4" SIGIS="undef" SIGNAME="shift_register_8bit_0_Q4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Q4"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Q3" SIGIS="undef" SIGNAME="shift_register_8bit_0_Q3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Q3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Q2" SIGIS="undef" SIGNAME="shift_register_8bit_0_Q2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Q2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Q1" SIGIS="undef" SIGNAME="shift_register_8bit_0_Q1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Q1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Q0" SIGIS="undef" SIGNAME="shift_register_8bit_0_Q0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Q0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/shift_register_8bit_1" HWVERSION="1.0" INSTANCE="shift_register_8bit_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="shift_register_8bit" VLNV="xilinx.com:xup:shift_register_8bit:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="DemoPJ1_shift_register_8bit_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="DSA" SIGIS="undef" SIGNAME="xup_inv_0_y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xup_inv_0" PORT="y"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="DSB" SIGIS="undef" SIGNAME="xup_inv_0_y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xup_inv_0" PORT="y"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="CP" SIGIS="undef" SIGNAME="clk_div_0_clk_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_div_0" PORT="clk_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="MR_n" SIGIS="undef" SIGNAME="External_Ports_MR_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="MR_n"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Q7" SIGIS="undef" SIGNAME="shift_register_8bit_1_Q7">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="shift_register_8bit_0" PORT="DSA"/>
+            <CONNECTION INSTANCE="shift_register_8bit_0" PORT="DSB"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="Q7_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Q6" SIGIS="undef" SIGNAME="shift_register_8bit_1_Q6">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Q6_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Q5" SIGIS="undef" SIGNAME="shift_register_8bit_1_Q5">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Q5_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Q4" SIGIS="undef" SIGNAME="shift_register_8bit_1_Q4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Q4_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Q3" SIGIS="undef" SIGNAME="shift_register_8bit_1_Q3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Q3_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Q2" SIGIS="undef" SIGNAME="shift_register_8bit_1_Q2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Q2_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Q1" SIGIS="undef" SIGNAME="shift_register_8bit_1_Q1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Q1_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Q0" SIGIS="undef" SIGNAME="shift_register_8bit_1_Q0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Q0_1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/xup_inv_0" HWVERSION="1.0" INSTANCE="xup_inv_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xup_inv" VLNV="xilinx.com:xup:xup_inv:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DELAY" VALUE="3"/>
+        <PARAMETER NAME="Component_Name" VALUE="DemoPJ1_xup_inv_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="shift_register_8bit_0_Q7">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="shift_register_8bit_0" PORT="Q7"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="y" SIGIS="undef" SIGNAME="xup_inv_0_y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="shift_register_8bit_1" PORT="DSA"/>
+            <CONNECTION INSTANCE="shift_register_8bit_1" PORT="DSB"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>
